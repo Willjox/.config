@@ -6,17 +6,18 @@
 
 # ~/.william.bashrc
 #William
+#Alias
 alias lsg='ls -a|grep '
 alias ..='cd ..'
 alias pacman='sudo pacman' 
-#alias systemctl='sudo systemctl'
+
 alias serverssh='sshfs william@server.jox.nu:/home/william/ /home/william/server/ -C -o 'follow_symlinks''
 alias unserverssh='fusermount3 -u /home/william/server/'
-
+alias q='exit'
 #jox
 #export EDITOR=nvim
 #export VISUAL=nvim
-
+export PATH=$PATH:"$HOME"/Skript/
 
 #Skräp som inte följer XDG BASE DIRECTORY
 alias wget='wget --hsts-file=""$HOME"/.cache/wget-hsts"'
