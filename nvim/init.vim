@@ -2,9 +2,11 @@
 set number
 set ignorecase
 set smartcase
+set clipboard=unnamedplus
 "byt esc mot caps vid start, stäng när vim avslutas
 "au VimEnter * silent! !setxkbmap -option caps:swapescape
 "au VimLeave * silent! !setxkbmap -option
+
 "vim plug
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'https://github.com/scrooloose/nerdtree.git'
