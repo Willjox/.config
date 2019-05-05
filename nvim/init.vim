@@ -2,10 +2,9 @@
 set number
 set ignorecase
 set smartcase
-set clipboard=unnamedplus
-"byt esc mot caps vid start, stäng när vim avslutas
-"au VimEnter * silent! !setxkbmap -option caps:swapescape
-"au VimLeave * silent! !setxkbmap -option
+set clipboard=unnamedplus "Ändrar kopieringsbuffern till OSets.
+
+
 
 "vim plug
 call plug#begin('~/.local/share/nvim/plugged')
@@ -27,7 +26,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
